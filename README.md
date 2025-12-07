@@ -7,7 +7,7 @@ The project is built using **FastAPI** for high performance and **MongoDB** for 
 
 ## Features
 * **CRUD Operations:** Full support to Create, Read, Update, and List notes.
-* **Soft Delete:** Data safety is prioritized. When a note is "deleted," it is not removed from the database; instead, a flag (`is_deleted`) is set to true.
+* **Soft Delete:** When a note is "deleted," it is not removed from the database; instead, a flag (`is_deleted`) is set to true.
 * **Audit Logs:** A separate internal logging system records every "CREATE", "UPDATE", and "SOFT_DELETE" action with a timestamp to track activity.
 * **Versioning:** The API structure supports versioning (e.g., `/v1/notes`) to allow for future updates without breaking existing integrations.
 * **Scalable Architecture:** Logic is separated from API routes to avoid code duplication and allow easier testing.
